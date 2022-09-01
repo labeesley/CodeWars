@@ -46,3 +46,4 @@ function arrayDiff(newArray1, array2) {
   // console.log(arrayDiff([1, 2, 3], [1, 2])) //-> [3]
   // console.log(arrayDiff([1, 2, 2], [1])) //-> [2, 2]
   
+//did this work?
