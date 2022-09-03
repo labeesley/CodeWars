@@ -162,6 +162,6 @@ function greet(name, owner){
     }
 }
 
-console.log(greet('Vivian', 'Vivian')); //=> 'Hello boss'
-console.log(greet('Vivian')); //=> 'Hello guest'
-console.log(greet('Lara', 'Vivian')); //=> 'Hello guest'
+// console.log(greet('Vivian', 'Vivian')); //=> 'Hello boss'
+// console.log(greet('Vivian')); //=> 'Hello guest'
+// console.log(greet('Lara', 'Vivian')); //=> 'Hello guest'
