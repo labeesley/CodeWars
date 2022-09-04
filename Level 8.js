@@ -165,3 +165,37 @@ function greet(name, owner){
 // console.log(greet('Vivian', 'Vivian')); //=> 'Hello boss'
 // console.log(greet('Vivian')); //=> 'Hello guest'
 // console.log(greet('Lara', 'Vivian')); //=> 'Hello guest'
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////\\\\\\\\
+/////Sept 9\\\\\
+////////\\\\\\\\
+
+//Beginner - Lost Without a Map
+
+/*
+Given an array of integers, return a new array with each value doubled.
+
+For example:
+
+[1, 2, 3] --> [2, 4, 6]
+*/
+
+//using map method
+// function maps(x){
+//     return x.map(ele => ele * 2)
+// }
+
+// console.log(maps([1, 2, 3])); //=> [2, 4, 6]
+
+//use a for loop
+function maps(x){
+    let doubled = [];
+    for (let i = 0; i < x.length; i++){
+        doubled.push(x[i] * 2);
+    }
+    return doubled;
+}
+
+console.log(maps([1, 2, 3])); //=> [2, 4, 6]
