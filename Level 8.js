@@ -169,7 +169,7 @@ function greet(name, owner){
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////\\\\\\\\
-/////Sept 9\\\\\
+/////Sept 4\\\\\
 ////////\\\\\\\\
 
 //Beginner - Lost Without a Map
@@ -198,4 +198,65 @@ function maps(x){
     return doubled;
 }
 
-console.log(maps([1, 2, 3])); //=> [2, 4, 6]
+// console.log(maps([1, 2, 3])); //=> [2, 4, 6]
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////\\\\\\\\
+/////Sept 5\\\\\
+////////\\\\\\\\
+
+//Convert a Boolean to a String
+
+/*
+Implement a function which convert the given boolean value into its string representation.
+
+Note: Only valid inputs will be given.
+*/
+
+function booleanToString(b){
+    //your code here
+    if (typeof(b) === 'boolean') {
+        return JSON.stringify(b);
+    }
+  }
+
+// console.log(booleanToString(true)); // 'true'
+// console.log(booleanToString(false)); // 'false'
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Convert a String to a Number!
+/*
+Note: This kata is inspired by Convert a Number to a String!. Try that one too.
+
+Description
+We need a function that can transform a string into a number. 
+    What ways of achieving this do you know?
+
+Note: Don't worry, all inputs will be strings, 
+    and every string is a perfectly valid representation of an integral number.
+
+Examples
+"1234" --> 1234
+"605"  --> 605
+"1405" --> 1405
+"-7" --> -7
+*/
+
+//using parseInt()
+// const stringToNumber = function(str){
+//     // put your code here
+//     return parseInt(str);
+//   }
+
+//using Number()
+  const stringToNumber = function(str){
+    // put your code here
+    return Number(str);
+  }
+
+console.log(stringToNumber('1234')); // 1234
+console.log(stringToNumber('605')); // 605
+console.log(stringToNumber('1405')); // 1405
+console.log(stringToNumber('-7')); // -7

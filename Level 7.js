@@ -28,8 +28,8 @@ function isIsogram(str){
       duplicates.push(newString[i]);
     }
   }
-  console.log('noDoubles', noDoubles)
-  console.log('duplicates', duplicates)
+  // console.log('noDoubles', noDoubles)
+  // console.log('duplicates', duplicates)
   if (duplicates.length === 0) {
     return true;
   }
@@ -39,7 +39,45 @@ function isIsogram(str){
 }
 
 
-console.log(isIsogram('euna')); //true
-console.log(isIsogram('Dermatoglyphics')); //true
-console.log(isIsogram('aba')); //false
-console.log(isIsogram('moOse')); //false
+// console.log(isIsogram('euna')); //true
+// console.log(isIsogram('Dermatoglyphics')); //true
+// console.log(isIsogram('aba')); //false
+// console.log(isIsogram('moOse')); //false
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////\\\\\\\\
+/////Sept 6\\\\\
+////////\\\\\\\\
+
+//Binary Addition
+/*
+DESCRIPTION:
+Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
+
+The binary number returned should be a string.
+
+Examples:(Input1, Input2 --> Output (explanation)))
+
+1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
+5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
+*/
+
+function addBinary(a,b) {
+  let decimal = a + b;
+  let binary = [];
+  while (decimal > 0) {
+    if (decimal % 2 === 0) {
+      decimal = decimal / 2;
+      binary.push(decimal % 2);
+    }
+    else {
+      decimal = Math.floor(decimal / 2);
+      binary.push(decimal % 2);
+    }
+  }
+  return binary.join('');
+}
+
+// console.log(addBinary(1, 1)); // '10' (1 + 1 = 2 in decimal or 10 in binary)
+// console.log(addBinary(5, 9)); // "1110" (5 + 9 = 14 in decimal or 1110 in binary)
