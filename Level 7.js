@@ -67,17 +67,12 @@ function addBinary(a,b) {
   let decimal = a + b;
   let binary = [];
   while (decimal > 0) {
-    if (decimal % 2 === 0) {
-      decimal = decimal / 2;
-      binary.push(decimal % 2);
-    }
-    else {
-      decimal = Math.floor(decimal / 2);
-      binary.push(decimal % 2);
-    }
+    binary.push(decimal % 2);
+    decimal = Math.floor(decimal / 2);
   }
-  return binary.join('');
+  return binary.reverse().join('');
 }
 
+// console.log(addBinary(1, 2)); // '11' (1 + 2 = 3 in decimal or 11 in binary)
 // console.log(addBinary(1, 1)); // '10' (1 + 1 = 2 in decimal or 10 in binary)
 // console.log(addBinary(5, 9)); // "1110" (5 + 9 = 14 in decimal or 1110 in binary)
